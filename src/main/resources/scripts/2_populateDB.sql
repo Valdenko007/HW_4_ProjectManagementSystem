@@ -1,0 +1,22 @@
+use hw;
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (1,'Java','Middle');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (2,'Java','Junior');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (3,'Java','Senior');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (4,'C++','Junior');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (5,'C++','Middle');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (6,'C++','Senior');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (7,'C#','Junior');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (8,'C#','Middle');
+INSERT INTO `skills` (`id`,`language`,`level`) VALUES (9,'C#','Senior');
+INSERT INTO `companies` (`id`, `name_company`) VALUES (1, 'PayPal');
+INSERT INTO `companies` (`id`, `name_company`) VALUES (2, 'Amazon');
+INSERT INTO `companies` (`id`, `name_company`) VALUES (3, 'Corning');
+INSERT INTO `companies` (`id`, `name_company`) VALUES (4, 'EPAM');
+insert into `customers` (`id`, `name_customer`) values (1, 'Volodymyr Zelenskyi') , (2, 'Boris Jonsonyk') , (3, 'Joseph Baiden'), (4,'Andrzej Duda');
+insert into `developers` (`id`,`name_developer`,`age`,`salary`) values (1, 'Anton', 25,5550), (2, 'Mykola', '30',6000),(3,'Kirill',35,5000) , (4, 'Oleg', 33,4000) , (5, 'Bohdan', 30,3000);
+insert into `projects` (`id` , `name_project`, `cost`,`create_date`) values (1, 'Virus',10000,'04.02.2004') , (2, 'Puzzle history',2,'18.05.2005') , (3, 'Dogsearcher',14000,'09.11.2011') , (4, 'World money',2000,'15.02.2010') , (5, 'Catkiller',3000,'12.02.2012');
+insert into `companies_projects` (`id_company`,`id_project`) values (1,1) , (2,2) , (3,3) , (4,1);
+insert into `projects_customers` (`id_customer`,`id_project`) values (1,1), (2,2) ,(3,3) ,(4,4);
+insert into `developers_skills` (`id_developer`,`id_skill`) values (1, 2), (2,1),(3,8),(4,9),(5,3);
+insert into `projects_developers` (`id_project`,`id_developer`) values (1,1),(5,1),(3,2),(5,2),(2,3);
+
